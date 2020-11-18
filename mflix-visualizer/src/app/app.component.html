@@ -1,0 +1,8 @@
+<button (click)="load10Movies()">Carica 10 film</button>
+
+<div *ngFor="let movie of results">
+  <hr>
+  <h1>{{movie.title}}</h1>
+  <img [src]="photoURL(movie.poster)">
+  <p>{{movie.fullplot}}</p>
+</div>
